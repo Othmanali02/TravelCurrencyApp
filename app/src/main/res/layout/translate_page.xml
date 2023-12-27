@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context=".Translate">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country Currency Calculator"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+
+            android:background="@color/scramble"
+
+
+            android:textStyle="bold"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/logScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Travel Destination"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/confTxt"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+
+
+            android:text="Enter the source country you're travelling from"
+            />
+
+
+        <Spinner
+            android:id="@+id/countriesSpinnerSource"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+
+            android:backgroundTint="@color/black"
+
+
+            android:entries="@array/countries" />
+
+
+        <TextView
+            android:id="@+id/destTxt"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+
+
+            android:text="Enter the destination country you're travelling to"
+            />
+
+
+        <Spinner
+            android:id="@+id/countriesSpinnerDestination"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/black"
+
+            android:entries="@array/countries" />
+
+
+
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/lightgreen"
+            android:onClick="btnRegisterUser"
+            android:layout_marginTop="20dp"
+
+            android:text="Compute" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="75dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="19dp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Logout"
+            android:backgroundTint="@color/lightgreen"
+            />
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

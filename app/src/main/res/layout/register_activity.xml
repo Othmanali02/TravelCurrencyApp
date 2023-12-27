@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country Currency Calculator"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+
+            android:background="@color/scramble"
+
+
+            android:textStyle="bold"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/logScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/NameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+
+
+            android:layout_marginTop="20dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_gravity="center"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/fstTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="55dp"
+
+
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_gravity="center"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/secTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+
+            android:text="Password"
+            />
+        <EditText
+            android:id="@+id/txtPwd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/confTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+
+            android:text="Confirm Password"
+            />
+        <EditText
+            android:id="@+id/txtConfirmPwd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:onClick="btnRegisterUser"
+
+            android:text="Register" />
+        <Button
+            android:id="@+id/lnkLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Already have an account? Login now!"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textSize="14dp"
+            android:textColor="#3F51B5"/>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
